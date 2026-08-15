@@ -45,8 +45,11 @@ export default function Navbar() {
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <a href="tel:+52 951579 9707" className="nav-cta-desktop">
-                        <Phone size={14} /> Llamar
+                    <a href="/login" className="nav-login-button">
+                        Iniciar sesión
+                    </a>
+                    <a href="/registro" className="nav-cta-desktop">
+                        Registrarse
                     </a>
 
                     <button
@@ -95,7 +98,27 @@ export default function Navbar() {
                         </a>
                     ))}
                     <a
-                        href="tel:+52 951 579 9707"
+                        href="/login"
+                        style={{
+                            marginTop: 8,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: 8,
+                            padding: "12px 0",
+                            borderRadius: 10,
+                            background: "#ffffff",
+                            border: "1px solid var(--gris-200)",
+                            color: "var(--verde)",
+                            fontSize: 14,
+                            fontWeight: 700,
+                            textDecoration: "none",
+                        }}
+                    >
+                        Iniciar sesión
+                    </a>
+                    <a
+                        href="/registro"
                         style={{
                             marginTop: 8,
                             display: "flex",
@@ -111,7 +134,7 @@ export default function Navbar() {
                             textDecoration: "none",
                         }}
                     >
-                        <Phone size={14} /> Llamar ahora
+                        Registrarse
                     </a>
                 </div>
             )}
